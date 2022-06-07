@@ -1,0 +1,27 @@
+/* BW 
+Color Palette: #F0F5F9 #C9D6DF #52616B #1E2022 - Color Hunt */
+/* Blue-Orange 
+Color Palette: #112B3C #205375 #F66B0E #EFEFEF - Color Hunt */
+/* Purple-Orange
+Color Palette: #251D3A #2A2550 #E04D01 #FF7700 - Color Hunt */
+/* Coffee
+#D7B19D #C68B59 #865439 #402218*/
+:root {
+	font-size: 16px;
+	--text-color: #402218;
+	--bg-color: #D7B19D;
+}
+
+* {
+	color: var(--text-color);
+	/*margin: 0;*/
+}
+body {
+	background-color: var(--bg-color);
+	font-family: "Helvetica", sans-serif;
+}
+
+ul.links > li {
+	display: inline;
+	text-decoration: none;
+}
