@@ -1,7 +1,0 @@
-:root {
-    --main-text-color: black;
-}
-.link {
-    list-style: none;
-    color: var(---main-text-color);
-}
