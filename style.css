@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;800;900&display=swap');
+
+:root {
+  --lightest-color: 213, 228, 252;
+  --main-text-color: 175, 200, 241;
+  --main-bg-color: 18, 28, 43;
+  --nav-bg-color: 16, 24, 37;
+}
+
+::-webkit-scrollbar {
+ width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--main-text-color));
+  border: 3px solid rgb(var(--main-bg-color));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(var(--main-bg-color));
+  color: rgb(var(--main-text-color));
+  font-family: "Inter", sans-serif;
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+/* Project item card */
+.project-list > li {
+  margin: 1em 0;
+  padding: 2em 3em;
+  background-color: rgba(var(--lightest-color), 0.04);
+  border: 1px solid rgba(var(--lightest-color), 0.5);
+}
+h1, h2, h2 > a, h3  {
+  color: var(--lightest-color);
+}
+h1 {
+  font-weight: 900;
+  font-size: 2.5em;
+}
+p, ul {
+  margin-block-start: 0.8em;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: color 0.3s ease-in;
+}
+
+main {
+  margin-top: 36px;
+  display: flex;
+  padding-inline-end: 5vw;
+}
+
+article, section {
+  margin-top: 3em;
+}
+.project-list h2 a:hover {
+  color: #1bbeff;
+  transition: color 0.3s ease-out;
+}
+.tech-list li {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.1em;
+  margin-inline-end: 10px;
+  transition: color 0.2s ease-in-out;
+}
+.tech-list li:hover {
+  color: #1bbeff;
+  transition: color 0.2s ease-in-out;
+}
+
+#nav-btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+#nav-btn div {
+  background-color: rgb(var(--main-text-color));
+  width: 25px;
+  height: 2px;
+}
+.nav-header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  padding: 20px 30px;
+  background-color: rgb(var(--nav-bg-color));
+}
+
+#nav-sections.show {
+  left: 0;
+  transition: all 0.3s ease-out;
+}
+#nav-sections {
+  z-index: 2;
+  position: fixed;
+  left: -100vw;
+  width: fit-content;
+  height: 100vh;
+  background-color: rgb(var(--nav-bg-color));
+  transition: all 0.3s ease-in;
+}
+
+#nav-sections li {
+  padding: 0.5em 1em;
+}
+
+#content {
+  padding-inline-start: 5vw;
+}

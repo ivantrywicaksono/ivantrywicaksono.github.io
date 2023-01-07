@@ -2,44 +2,82 @@
 <html>
 	<head>
 		<title>Ivan Try Wicaksono</title>
-		<link rel="stylesheet" href="styles/style.css"/>
+		<link rel="stylesheet" href="style.css"/>
 		<meta name="google-site-verification" content="-RPJJxB6LQFELhXCT9djb5YCqA3UBORQFbzuKenEZAk" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta name="keywords" content="ivantrywicaksono">
-		<meta name="keywords" content="jukiloaqsw">
-		<meta name="keywords" content="Ivan's Blog">
 		<meta name="description" content="This site is a personal website. Made by Ivan Try Wicaksono">
+		<!-- Web Icon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/site.webmanifest">
 	</head>
 	<body>
 		<header class="nav-header">
-			<h1 class="nav-header__title"><a href="#home">Ivan Wicaksono</a></h1>
-			<nav>
-				<ul class="nav-header__links">
-					<li><a href="https://ivantrywicaksono.github.io/blog">Blog</a></li>
-				</ul>
-			</nav> 
+			<div id="nav-btn">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			
+			<!-- <a href="#home"><img src="icon/favicon-32x32.png" alt="Ivan Wicaksono" class="icon" title="Ivan Try Wicaksono"/></a> -->
 		</header>
+		
 		<main id="home">
-			<article>
-				<h1>Hello, World!</h1>
-				<h1>Ivan Try Wicaksono</h1>
-				<p>I'm just an ordinary person who love to play around with Art, Music, and/or Technology.</p>
-			</article>
-			<section class="projects">
-				<h1>
-					My Projects
-				</h1>
-				<h1><a href="https://ivantrywicaksono.github.io/blog">Ivan's Blog</a></h1>
-			</section>
-	  </main>
-		<footer>
-			<article>
-				<h1>Follow Me</h1>
+			<nav id="nav-sections">
 				<ul>
-					<li><a href="https://github.com/ivantrywicaksono">Github</a></li>
-					<li><a href="#">Instagram</a></li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#about">Technology</a>
+					</li>
+					<li>
+						<a href="#about">Projects</a>
+					</li>
 				</ul>
-			</article>
-		</footer>
+			</nav>
+			<div id="content">
+				<article>
+					<h2>Hello, I am</h2>
+					<h1>Ivan Try Wicaksono</h1>
+					<p>I'm just an ordinary person who love to play around with Art, Music, and/or Technology.</p>
+				</article>
+				<section>
+					<h1>
+						My Projects
+					</h1>
+					<ul class="project-list">
+						<li>
+							<h2><a href="https://ivantrywicaksono.github.io/blog">Ivan's Blog</a></h2>
+							<p>A website for sharing my knowledge, thoughts, opinions, and other things i want to share with the internet citizens. For now, the pages in this website are only creatable by me. </p>
+							<ul class="tech-list">
+								<li>HTML</li>
+								<li>CSS</li>
+							</ul>
+						</li>
+						<li>
+							<h2><a href="https://ivantrywicaksono.github.io/projek-akhir-imk1">Cacoffee's Company Profile Website</a></h2>
+							<p>A company profile website for agroindustry company - Cacoffee (fictional). This is my final assignment for my Human-Computer Interaction class in the 1st semester.</p>
+							<ul class="tech-list">
+								<li>HTML</li>
+								<li>CSS</li>
+							</ul>
+						</li>
+						<li>
+							<h2><a href="https://ivantrywicaksono.github.io/bookshelf">Bookshelf</a></h2>
+							<p>A simple web app for storing books data and the reading status. This website use the local storage to save all of the user's books data so that it can be used in offline mode.</p>
+							<ul class="tech-list">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+	  </main>
+
+		<script src="index.js"></script>
 	</body>
 </html>
