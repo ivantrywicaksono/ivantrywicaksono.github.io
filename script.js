@@ -39,6 +39,9 @@ function plusSlide(n) {
       .querySelectorAll('path')
       .forEach((element) => element.setAttribute('stroke', 'gray'));
   } else {
+    leftBtn.disabled = false;
+    rightBtn.disabled = false;
+
     // Change left and right button svg stroke color
     leftBtn.querySelector('circle').setAttribute('stroke', 'black');
     leftBtn
