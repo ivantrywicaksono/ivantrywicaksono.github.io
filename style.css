@@ -58,6 +58,21 @@ a {
   transition: color 0.3s ease-in;
 }
 
+a[download] {
+  display: block;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: rgb(56, 136, 228);
+}
+
+a[download]:hover {
+  cursor: pointer;
+}
+
+a[download]:focus {
+  background-color: black;
+}
+
 main {
   margin-top: 36px;
   display: flex;
