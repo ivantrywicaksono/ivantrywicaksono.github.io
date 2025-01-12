@@ -15,6 +15,13 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
 }
+body, main, section {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
 
 h1 {
   font-size: 2.5rem;
@@ -37,15 +44,22 @@ body>header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 3rem;
+  border-bottom: 1px solid #000;
 }
 
 main {
-  padding: 2rem 3rem;
+  padding: 2rem 0;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+footer svg {
+  fill: #fff;
 }
 
 .nav-btns {
@@ -67,17 +81,24 @@ footer {
 }
 
 main>section {
-  margin: 0 auto 3rem auto;
-  /* margin-bottom: 3rem; */
-  padding: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   line-height: 1.15;
   gap: 0.5em;
 }
 
+main > section > div:first-child {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
 .card {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   padding: 1.5rem;
   border: 2px solid #000;
   border-radius: 2rem;
@@ -177,7 +198,7 @@ main>section {
   }
 
   main>section {
-    max-width: 80vw;
+    /* max-width: 80vw; */  
     flex-direction: column;
     text-align: center;
   }
@@ -207,7 +228,7 @@ main>section {
   }
 
   main>section {
-    max-width: max-content;
+    /* max-width: max-content; */
     flex-direction: column;
     text-align: left;
   }
