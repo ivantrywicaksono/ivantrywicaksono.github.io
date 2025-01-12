@@ -82,6 +82,7 @@ main>section {
   padding: 1rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   line-height: 1.15;
   gap: 0.5em;
 }
@@ -232,7 +233,6 @@ main>section>div:first-child {
 
   .profile {
     flex-direction: row;
-    justify-content: center;
   }
 
   .profile p {
