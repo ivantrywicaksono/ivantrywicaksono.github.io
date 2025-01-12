@@ -15,9 +15,6 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
 }
-body, main, section {
-  width: 100%;
-}
 
 a {
   text-decoration: none;
@@ -89,7 +86,7 @@ main>section {
   gap: 0.5em;
 }
 
-main > section > div:first-child {
+main>section>div:first-child {
   width: 100%;
   padding: 2rem;
   text-align: center;
@@ -198,7 +195,7 @@ main > section > div:first-child {
   }
 
   main>section {
-    /* max-width: 80vw; */  
+    /* max-width: 80vw; */
     flex-direction: column;
     text-align: center;
   }
@@ -235,6 +232,7 @@ main > section > div:first-child {
 
   .profile {
     flex-direction: row;
+    justify-content: center;
   }
 
   .profile p {
